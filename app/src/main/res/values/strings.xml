@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Les Aventures</string>
+    <string name="title_activity_level1_main_menu">Level1MainMenu</string>
+    <string name="title_activity_level1_main">Level1MainActivity</string>
+    <string name="title_activity_my_application">MyApplication</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_main_close">Close</string>
+    <string name="title_activity_main_login">Login</string>
+    <string name="title_activity_main_display_name">Display Name</string>
+    <string name="title_activity_main_scoreboard">Scoreboard</string>
+    <string name="title_activity_main_email">Email</string>
+    <string name="title_activity_main_name">Name</string>
+    <string name="title_activity_main_username">Username</string>
+    <string name="title_activity_main_password">Password</string>
+    <string name="title_activity_main_confirm_password">Confirm password</string>
+    <string name="title_activity_main_logout">Log out</string>
+    <string name="title_activity_main_signup">Sign Up</string>
+    <string name="title_activity_level3_main">Level3Main</string>
+    <string name="title_activity_level3_computer_main">Level3ComputerMain</string>
+    <string name="title_activity_level3_main_menu">Level3MainMenu</string>
+    <string name="title_activity_level2_main">Level2MainActivity</string>
+    <string name="title_activity_level3_ready">Level3Ready</string>
+    <string name="attack_error">Attack cannot be empty</string>
+    <string name="steal_error">Steal cannot be empty</string>
+    <string name="defense_error">Defense cannot be empty</string>
+    <string name="player1_wins">Player 1 is the winner of chicken dinner.</string>
+    <string name="player2_wins">Player 2 is the winner of chicken dinner.</string>
+    <string name="level2_easy">EASY</string>
+    <string name="level2_standard">STANDARD</string>
+    <string name="level2_hard">HARD</string>
+    <string name="level2_lives">10 LIVES</string>
+    <string name="level1_easy">EASY</string>
+    <string name="level1_normal">NORMAL</string>
+    <string name="level1_hard">HARD</string>
+    <string name="level1_insane">INSANE</string>
+    <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
+    <string name="level3">Level 3</string>
+
+</resources>

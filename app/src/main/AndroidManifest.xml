@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.game.lesavantures">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main.Statistics.StatisticsDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Main.Statistics.ScoreboardActivity" />
+        <activity
+            android:name=".Level3.GameUI.Level3Ready"
+            android:label="activity_level3_ready"
+            android:parentActivityName=".Level3.GameUI.Level3MainMenu"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Level2.Activities.Level2MainMenu" />
+        <activity
+            android:name=".Level2.Activities.Level2MainActivity"
+            android:label="@string/title_activity_level2_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.User.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Level3.GameUI.Level3MainMenu"
+            android:label="@string/title_activity_level3_main_menu"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Level3.GameUI.Level3Main"
+            android:label="@string/title_activity_level3_main"
+            android:parentActivityName=".Level3.GameUI.Level3Ready"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Level3.GameUI.Level3ComputerMain"
+            android:label="@string/title_activity_level3_computer_main"
+            android:parentActivityName=".Level3.GameUI.Level3MainMenu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Main.User.SignUpActivity" />
+        <activity android:name=".Main.Level.MainMenuActivity" />
+        <activity
+            android:name=".Level1.Level1MainActivity"
+            android:label="@string/title_activity_level1_main"
+            android:parentActivityName=".Level1.Level1MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.game.lesavantures.Level1.Level1MainMenu" />
+        </activity>
+        <activity
+            android:name=".Level1.Level1MainMenu"
+            android:label="@string/title_activity_level1_main_menu"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.game.lesavantures.Main.MainActivity" />
+        </activity>
+        <activity android:name=".Main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

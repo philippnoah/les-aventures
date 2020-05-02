@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level1.Level1MainActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_level1_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <ImageView
+        android:id="@+id/mainView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContextDescription" />
+
+    <Button
+        android:id="@+id/goDownButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:alpha="100"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goLeftButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:alpha="100"
+        app:layout_constraintBottom_toTopOf="@+id/goDownButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goRightButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:alpha="100"
+        app:layout_constraintBottom_toTopOf="@+id/goDownButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/crates"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:alpha="255"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invincibilityPowerup" />
+
+    <TextView
+        android:id="@+id/speedPowerup"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/invincibilityPowerup"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ammo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ammo"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedPowerup" />
+
+    <ImageView
+        android:id="@+id/speedPowerUpIcon"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FFFFFF"
+        android:outlineAmbientShadowColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/speedPowerup"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_speed" />
+
+    <ImageView
+        android:id="@+id/bulletIcon"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:background="#32640000"
+        app:layout_constraintEnd_toStartOf="@+id/ammo"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedPowerUpIcon"
+        app:srcCompat="@drawable/_bullet" />
+
+    <ImageView
+        android:id="@+id/invincibilityIcon"
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="24dp"
+        android:background="#32000000"
+        app:layout_constraintEnd_toStartOf="@+id/invincibilityPowerup"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bulletIcon"
+        app:srcCompat="@drawable/_invincibility" />
+
+    <ImageView
+        android:id="@+id/crateIcon"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/crates"
+        app:layout_constraintTop_toBottomOf="@+id/invincibilityIcon"
+        app:srcCompat="@drawable/_crate" />
+
+
+    <Button
+        android:id="@+id/shootButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="412dp"
+        android:layout_height="522dp"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/invincibilityButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible"
+        android:layout_above="@+id/shootButton" />
+
+    <Button
+        android:id="@+id/speedButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_above="@+id/shootButton" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="417dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:alpha="25"
+        android:visibility="invisible"
+        app:backgroundTint="#32FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shootButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--<ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="103dp"
+        android:layout_height="141dp"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/_beaver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
